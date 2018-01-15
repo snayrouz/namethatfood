@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AQn-1v-weH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GillSans.ttc">
+            <string>GillSans-BoldItalic</string>
+            <string>GillSans-LightItalic</string>
+            <string>GillSans-SemiBoldItalic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="wtfood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qLX-hH-XTV">
+                                <rect key="frame" x="16" y="74" width="343" height="343"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qLX-hH-XTV" secondAttribute="height" multiplier="1:1" id="bvg-mv-FUw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="CvZ-ql-E5f">
+                                <rect key="frame" x="16" y="425" width="343" height="179"/>
+                                <fontDescription key="fontDescription" name="GillSans-LightItalic" family="Gill Sans" pointSize="21"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.36862745098039218" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CvZ-ql-E5f" firstAttribute="top" secondItem="qLX-hH-XTV" secondAttribute="bottom" constant="19" id="0SF-xz-xjM"/>
+                            <constraint firstItem="qLX-hH-XTV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="FTk-bb-5a2"/>
+                            <constraint firstAttribute="trailing" secondItem="CvZ-ql-E5f" secondAttribute="trailing" constant="16" id="NdB-zN-faR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qLX-hH-XTV" secondAttribute="trailing" constant="16" id="NzE-rt-lTS"/>
+                            <constraint firstItem="qLX-hH-XTV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="OKK-O8-2f0"/>
+                            <constraint firstItem="CvZ-ql-E5f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="QR3-9d-67f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CvZ-ql-E5f" secondAttribute="bottom" constant="20" id="Qc0-ru-ZSl"/>
+                            <constraint firstItem="CvZ-ql-E5f" firstAttribute="top" secondItem="qLX-hH-XTV" secondAttribute="bottom" constant="8" id="uyU-HF-Ens"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VQm-tz-7Ad">
+                        <barButtonItem key="leftBarButtonItem" largeContentSizeImage="twtr-icn-logo.png" systemItem="compose" id="Vzs-03-qfc">
+                            <color key="tintColor" red="1" green="0.41960784313725491" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="shareTapped:" destination="BYZ-38-t0r" id="3fB-44-5TY"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="Z2A-PB-BQc">
+                            <color key="tintColor" red="1" green="0.41960784313725491" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="cameraTapped:" destination="BYZ-38-t0r" id="9Ak-nh-9yN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="qLX-hH-XTV" id="e8k-dn-EDo"/>
+                        <outlet property="label" destination="CvZ-ql-E5f" id="u0Q-QX-8sb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="556" y="40.929535232383813"/>
+        </scene>
+        <!--Auth View Controller-->
+        <scene sceneID="yUQ-V2-vso">
+            <objects>
+                <viewController id="AQn-1v-weH" customClass="AuthViewController" customModule="wtfood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sLm-Wt-xi7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xf7-Gr-U8k">
+                                <rect key="frame" x="45" y="470" width="294" height="148"/>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.36862745098039218" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Xf7-Gr-U8k" secondAttribute="height" multiplier="147:74" id="vUz-uf-58C"/>
+                                </constraints>
+                                <string key="text">Login with Twitter and let me tell you what you're eating based on machine learning. Don't be shy, share what's on your plate with your friends!</string>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="GillSans-SemiBoldItalic" family="Gill Sans" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to WTFood!" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNa-AO-4D5">
+                                <rect key="frame" x="30" y="199" width="315" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LNa-AO-4D5" secondAttribute="height" multiplier="15:1" id="Gz9-6G-ZK6"/>
+                                    <constraint firstAttribute="width" secondItem="LNa-AO-4D5" secondAttribute="height" multiplier="15:1" id="suJ-Gy-OkL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="30"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="750c7c3591f0b9ebcd030e3a47e02d5e" translatesAutoresizingMaskIntoConstraints="NO" id="7d6-v2-K04">
+                                <rect key="frame" x="67" y="240" width="240" height="269"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.36862745098039218" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                        <accessibility key="accessibilityConfiguration" label="Login">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstItem="LNa-AO-4D5" firstAttribute="top" secondItem="W3b-fL-7kk" secondAttribute="top" constant="179" id="Gbj-z3-RXf"/>
+                            <constraint firstItem="W3b-fL-7kk" firstAttribute="bottom" secondItem="Xf7-Gr-U8k" secondAttribute="bottom" constant="49" id="Ht5-7G-T82"/>
+                            <constraint firstItem="W3b-fL-7kk" firstAttribute="trailing" secondItem="LNa-AO-4D5" secondAttribute="trailing" constant="30" id="JBr-SW-TvU"/>
+                            <constraint firstItem="W3b-fL-7kk" firstAttribute="trailing" secondItem="LNa-AO-4D5" secondAttribute="trailing" constant="30" id="MhR-OB-t2V"/>
+                            <constraint firstItem="LNa-AO-4D5" firstAttribute="leading" secondItem="W3b-fL-7kk" secondAttribute="leading" constant="30" id="P6B-22-OI6"/>
+                            <constraint firstItem="LNa-AO-4D5" firstAttribute="top" secondItem="W3b-fL-7kk" secondAttribute="top" constant="179" id="WXk-3O-zva"/>
+                            <constraint firstItem="LNa-AO-4D5" firstAttribute="leading" secondItem="W3b-fL-7kk" secondAttribute="leading" constant="30" id="d7e-Gh-8dv"/>
+                            <constraint firstItem="Xf7-Gr-U8k" firstAttribute="leading" secondItem="W3b-fL-7kk" secondAttribute="leading" constant="45" id="hBw-63-9zP"/>
+                            <constraint firstItem="W3b-fL-7kk" firstAttribute="trailing" secondItem="Xf7-Gr-U8k" secondAttribute="trailing" constant="36" id="jzO-Ti-Eum"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="W3b-fL-7kk"/>
+                    </view>
+                    <connections>
+                        <segue destination="MVX-DP-hQx" kind="show" identifier="loggedIn" id="fQH-eD-OFC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="prc-8W-gnc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1044" y="40.929535232383813"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DeX-ji-gct">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MVX-DP-hQx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xsq-ih-SEv">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.63710267310049007" green="0.12939740349264708" blue="0.43529411764705883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="19"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="WFl-ib-93t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gJx-ud-nOJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-232" y="41.379310344827587"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="750c7c3591f0b9ebcd030e3a47e02d5e" width="1168" height="1233"/>
+        <image name="twtr-icn-logo.png" width="16" height="13"/>
+    </resources>
+</document>
