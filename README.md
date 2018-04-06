@@ -1,4 +1,4 @@
-# WTFood
+# namethatfood
 Using a trained machine learning model, you are able to predict, to a 65% accuracy, what food you
 take a photo of. Once the prediction is made, an image and image description, provided by Wikipedia,
 tells you more about your food. Share what you're eating on Twitter!
@@ -22,6 +22,8 @@ tells you more about your food. Share what you're eating on Twitter!
 * CoreML
 * TwitterKit
 * Safari Services Framework
+* Tensorflow
+* Nvidia
 
 ## Contributing
 * Right now, I'm not looking for contributors as I plan to pivot this project. Once I have a plan in place, I'll open it up to contributers.
